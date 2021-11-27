@@ -1022,105 +1022,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 40px 20px;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  border-radius: 4px;
-  position: relative;
-  overflow: hidden;
-  transition: 0.3s;
-}
-
-.pricing .box:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
-}
-
-.pricing h3 {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-.pricing .price {
-  font-size: 36px;
-  color: #444444;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-}
-
-.pricing .price sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing .price span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing img {
-  padding: 30px 40px;
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #444444;
-  text-align: center;
-  line-height: 26px;
-  font-size: 16px;
-  margin-bottom: 25px;
-}
-
-.pricing ul li {
-  padding-bottom: 10px;
-}
-
-.pricing ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .btn-buy {
-  display: inline-block;
-  padding: 8px 40px 10px 40px;
-  border-radius: 50px;
-  color: #4154f1;
-  transition: none;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-  border: 1px solid #4154f1;
-}
-
-.pricing .btn-buy:hover {
-  background: #4154f1;
-  color: #fff;
-}
-
-.pricing .featured {
-  width: 200px;
-  position: absolute;
-  top: 18px;
-  right: -68px;
-  transform: rotate(45deg);
-  z-index: 1;
-  font-size: 14px;
-  padding: 1px 0 3px 0;
-  background: #4154f1;
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
 .faq .accordion-collapse {
@@ -1149,6 +1050,228 @@ section {
 .faq .accordion-body {
   padding: 0 0 25px 0;
   border: 0;
+}
+
+/*--------------------------------------------------------------
+# ourproducts
+--------------------------------------------------------------*/
+.ourproducts .ourproducts-item {
+  box-sizing: content-box;
+  padding: 30px 30px 0 30px;
+  margin: 30px 15px;
+  text-align: center;
+  min-height: 350px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.ourproducts .ourproducts-item .ourproducts-img {
+  width: 90px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin: 0 auto;
+}
+
+.ourproducts .ourproducts-item h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+}
+
+.ourproducts .ourproducts-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+.ourproducts .btn-read-more {
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #20C694;
+  box-shadow: 0px 5px 30px rgba(18, 155, 98, 0.4);
+}
+
+.ourproducts .btn-read-more span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.ourproducts .btn-read-more i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.ourproducts .btn-read-more:hover i {
+  transform: translateX(5px);
+}
+
+.ourproducts .ourproducts-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+}
+
+.ourproducts .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.ourproducts .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #009970;
+}
+
+.ourproducts .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #009970;
+}
+
+.ourproducts .ourproducts-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 15px;
+}
+
+.ourproducts .ourproducts-wrap::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+  border-radius: 15px;
+}
+
+.ourproducts .ourproducts-wrap img {
+  transition: 1s;
+  border-radius: 15px;
+}
+
+.ourproducts .ourproducts-wrap .ourproducts-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourproducts .ourproducts-wrap .ourproducts-info::before {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  border-top: 3px solid rgba(1, 41, 112, 0.2);
+  border-left: 3px solid rgba(1, 41, 112, 0.2);
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.ourproducts .ourproducts-wrap .ourproducts-info::after {
+  display: block;
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 35px;
+  right: 35px;
+  border-bottom: 3px solid rgba(1, 41, 112, 0.2);
+  border-right: 3px solid rgba(1, 41, 112, 0.2);
+  transition: all 0.5s ease 0s;
+  z-index: 9994;
+}
+
+.ourproducts .ourproducts-wrap .ourproducts-info h4 {
+  font-size: 20px;
+  color: #118d68;
+  font-weight: 700;
+}
+
+.ourproducts .ourproducts-wrap .ourproducts-info p {
+  color: #118d68;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.ourproducts .ourproducts-wrap .ourproducts-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.ourproducts .ourproducts-wrap .ourproducts-links a {
+  color: #fff;
+  background: #118d68;
+  margin: 10px 2px;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.ourproducts .ourproducts-wrap .ourproducts-links a i {
+  font-size: 24px;
+  line-height: 0;
+}
+
+.ourproducts .ourproducts-wrap .ourproducts-links a:hover {
+  background: #5969f3;
+}
+
+.ourproducts .ourproducts-wrap:hover img {
+  transform: scale(1.1);
+}
+
+.ourproducts .ourproducts-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.ourproducts .ourproducts-wrap:hover .ourproducts-info {
+  opacity: 1;
+}
+
+.ourproducts .ourproducts-wrap:hover .ourproducts-info::before {
+  top: 15px;
+  left: 15px;
+}
+
+.ourproducts .ourproducts-wrap:hover .products-info::after {
+  bottom: 15px;
+  right: 15px;
 }
 
 /*--------------------------------------------------------------
