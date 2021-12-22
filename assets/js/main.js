@@ -288,7 +288,8 @@
         });
         this.classList.add('filter-active');
 
-        productsIsotope.arrange({
+        productsIsotope.a
+        rrange({
           filter: this.getAttribute('data-filter')
         });
         aos_init();
