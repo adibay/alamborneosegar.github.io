@@ -311,7 +311,11 @@ section {
 }
 
 .navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul .active:hover {
+    color: var(--color-white);
+    background: #40C1D7;
+}
+
 .navbar .dropdown ul li:hover>a {
     color: #20C694;
 }
@@ -333,6 +337,33 @@ section {
     top: 0;
     left: 100%;
     visibility: visible;
+}
+
+.navbar .megamenu {
+    position: static;
+}
+
+.navbar .megamenu ul {
+    right: 0;
+    padding: 10px;
+    display: flex;
+}
+
+.navbar .megamenu ul li {
+    flex: 1;
+}
+
+.navbar .megamenu ul li a,
+.navbar .megamenu ul li:hover>a {
+    color: rgba(var(--color-white-rgb), 0.5);
+    background: none;
+}
+
+.navbar .megamenu ul li a:hover,
+.navbar .megamenu ul li .active,
+.navbar .megamenu ul li .active:hover {
+    color: var(--color-white);
+    background: #40C1D7;
 }
 
 @media (max-width: 1366px) {
