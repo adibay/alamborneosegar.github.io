@@ -366,6 +366,10 @@ section {
     background: #40C1D7;
 }
 
+.navbar .megamenu ul li a {
+    color: #20C694;
+}
+
 @media (max-width: 1366px) {
     .navbar .dropdown .dropdown ul {
         left: -90%;
